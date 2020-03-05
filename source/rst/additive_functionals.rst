@@ -509,7 +509,7 @@ The code below adds some functions that generate plots for instances of the ``AM
                 mscale = np.sqrt(yvar[nx+nm+ii, nx+nm+ii])
                 sscale = np.sqrt(yvar[nx+2*nm+ii, nx+2*nm+ii])
                 if mscale == 0.0:
-                    mscale = 1e-12   # avoids a runtime error from calculating ppf    
+                    mscale = 1e-12   # avoids a runtime warning from calculating ppf    
                 if sscale == 0.0:    # of normal distribution with std dev = 0.
                     sscale = 1e-12   # sets std dev to arbitrary small value instead
                 
